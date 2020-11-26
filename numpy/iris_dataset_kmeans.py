@@ -26,6 +26,7 @@ knn.fit(X, y)
 y_pred=knn.predict(X)
 
 # check the accuracy when n=5 using k-means on the dataset
+from sklearn import metrics
 print(metrics.accuracy_score(y,y_pred))
 
 # introduced 1 as neighbor cluster
@@ -38,4 +39,5 @@ knn.fit(X, y)
 y_pred=knn.predict(X)
 
 # check the accuracy when n=1 using k-means on the dataset
+from sklearn import metrics
 print(metrics.accuracy_score(y,y_pred))
