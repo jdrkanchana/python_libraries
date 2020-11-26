@@ -8,7 +8,7 @@ Using logistic regression in scikit to iris dataset
 from sklearn.datasets import load_iris
 iris=load_iris()
 
-# create X(featuures) and y(response)
+# create X(features) and y(response), X is a matrix and y is a vector
 X=iris.data
 y=iris.target
 
