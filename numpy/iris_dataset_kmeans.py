@@ -27,3 +27,15 @@ y_pred=knn.predict(X)
 
 # check the accuracy when n=5 using k-means on the dataset
 print(metrics.accuracy_score(y,y_pred))
+
+# introduced 1 as neighbor cluster
+knn =KNeighborsClassifier(n_neighbors=1)
+
+# fit the model with data
+knn.fit(X, y)
+
+# predicting response values for the observation
+y_pred=knn.predict(X)
+
+# check the accuracy when n=1 using k-means on the dataset
+print(metrics.accuracy_score(y,y_pred))
