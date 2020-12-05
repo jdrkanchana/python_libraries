@@ -1,1 +1,0 @@
-# numpy readme file
